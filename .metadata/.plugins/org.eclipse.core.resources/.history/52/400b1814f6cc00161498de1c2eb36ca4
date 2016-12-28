@@ -1,0 +1,28 @@
+package rest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestRest {
+
+	@Test
+	public void testRest2Num2() {
+		assertEquals(0, rest(2,2));
+	}
+
+
+	@Test
+	public void testSumNumWithZero() {
+		assertEquals(2, rest(2,0));
+		assertEquals(-2, rest(0,2));
+	}
+
+	
+
+	int rest(int a, int b) {
+		return Resta.rest(a, b);
+
+	}
+	
+}
